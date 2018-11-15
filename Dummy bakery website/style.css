@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+body{
+	background-image: url("img/baked-bakery-baking-230743.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.navbar a{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.bannerContents{
+	display: table-cell;
+	height: 100vh;
+	width: 100vw;
+	/*background-color: rgba(255,255,255,0.8);*/
+	vertical-align: middle;
+}
+.transWhiteBg{
+	background-color: rgba(255,255,255,0.8);
+	padding-bottom: 20px;
+}
+.jumbotron{
+	margin-bottom: 0px;
+}
+.card{
+	position: relative;
+	top: 0;
+	overflow-y: hidden;
+}
+.card:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.itemsHeading{
+	padding-top: 20px;
+}
+.card-img-overlay{
+	height: 100%;
+	background-color: rgba(235, 235, 224, 0.6);
+	color: white;
+	position: absolute;
+	top: 100%;
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.card:hover .card-img-overlay{
+	top: 0%;
+}
+.partners{
+	font-size: 200px;
+}
+.socialMedia{
+	font-size: 50px;
+}
+.socialMedia i{
+	color: black;
+}
+.navbar-toggler{
+	margin-top: 0px;
+	margin-left: 5px;
+}
+.team h5, p{
+	color: black;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 1200px) {/*lg*/
+	
+}
+@media (max-width: 992px) {/*md*/
+	.bannerContents img{
+		width: 300px;
+	}
+	.navbar-nav{
+		text-align: center;
+	}
+	.nav-item a{
+		width: 60vw;
+		margin-bottom: 10px;
+	}
+	.navbar-brand{
+		display: none;
+	}
+	#navbarResponsive{
+		max-height: 80vh;
+		overflow-y: scroll;
+	}
+}
+@media (max-width: 768px) {/*sm*/
+
+}
+@media (max-width: 576px) {/*xs*/
+
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
